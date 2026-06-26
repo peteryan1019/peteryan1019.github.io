@@ -1,0 +1,21 @@
+{
+  "name": "peter-yan-personal-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal website of Peter Yan — React + Vite, no backend.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "vite": "^5.4.8"
+  }
+}

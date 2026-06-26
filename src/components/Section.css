@@ -1,0 +1,68 @@
+.feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 56px;
+  padding: 56px 0;
+  border-bottom: 1px solid var(--line);
+}
+.feature:last-child {
+  border-bottom: none;
+}
+
+/* Alternate the media to the right on flipped rows */
+.feature-flip .feature-media {
+  order: 2;
+}
+
+.feature-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature-copy h3 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  margin-bottom: 0.6rem;
+}
+
+.feature-tags {
+  margin: 0.2rem 0 1rem;
+}
+
+.feature-copy p {
+  color: var(--ink);
+  font-size: 1.02rem;
+}
+
+.feature-bullets {
+  margin: 0.4rem 0 1.2rem;
+  color: var(--muted);
+}
+.feature-bullets li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.feature-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 860px) {
+  .feature {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 0;
+  }
+  /* Always show media first on mobile, regardless of flip */
+  .feature-flip .feature-media {
+    order: 0;
+  }
+}

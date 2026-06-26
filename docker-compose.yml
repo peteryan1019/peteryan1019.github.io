@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    image: peter-yan-website
+    container_name: peter-yan-website
+    ports:
+      # host:container — visit http://localhost:8080 (or http://<vm-ip>:8080)
+      - "8080:80"
+    restart: unless-stopped

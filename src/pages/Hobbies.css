@@ -1,0 +1,59 @@
+.hobby-section:nth-of-type(even) {
+  background: var(--bg-alt);
+}
+
+.hobby-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 36px;
+}
+.hobby-icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--navy);
+  color: var(--white);
+}
+.hobby-head h2 {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-bottom: 0.2rem;
+}
+.hobby-head p {
+  color: var(--muted);
+  margin: 0;
+  max-width: 640px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 26px;
+}
+
+.video-card {
+  margin: 0;
+}
+.video-card figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0.9rem 0.2rem 0;
+}
+.video-title {
+  font-weight: 600;
+  color: var(--navy);
+}
+.video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
