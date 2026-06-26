@@ -15,8 +15,7 @@ const projects = [
     links: [
       { label: 'View on GitHub', href: 'https://github.com/peteryan1019/bluetooth-3D-mouse' },
     ],
-    // media: { type: 'image', src: '/images/bluetooth-mouse.jpg', alt: 'Bluetooth 3D mouse prototype' },
-    media: { type: 'image' },
+    media: { type: 'image', src: '/images/stm32l4.jpeg', alt: 'Bluetooth 3D mouse prototype' },
   },
   {
     title: 'Autonomous Robot Soccer Player',
@@ -50,7 +49,7 @@ const projects = [
       'Integrated the AI generation, payment, and deployment pipelines end to end on Vercel.',
     ],
     links: [{ label: 'Live demo', href: 'https://car-magnet-app.vercel.app/' }],
-    media: { type: 'image' },
+    media: { type: 'image', src: '/images/car_magnet_demo.png', alt: 'AI-powered banner design web app' },
   },
 ]
 
