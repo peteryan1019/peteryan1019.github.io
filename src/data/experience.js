@@ -9,8 +9,7 @@ const experience = [
     location: 'Markham, Ontario',
     period: 'Sep – Dec 2025',
     bullets: [
-      'Built large ETL pipelines in Python and SQL to fetch and analyze marketing data, and optimized cron jobs around existing limitations — cutting batch runtime by 3+ hours.',
-      'Integrated third-party tools into the company site and ran A/B tests and tracking for 10+ marketing campaigns.',
+      'Data analytics + Marketing Campaigns Implementation & Tracking',
     ],
     tags: ['Python', 'SQL', 'ETL', 'A/B Testing', 'Frontend'],
   },
