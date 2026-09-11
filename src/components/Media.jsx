@@ -6,6 +6,8 @@ import './Media.css'
 /*
  * Renders the visual for a section. Supports:
  *   { type: 'image',   src, alt }      -> <img> (falls back to a styled placeholder)
+ *                                       add `fit: 'contain'` for logos/artwork that
+ *                                       must not be cropped by the 4:3 frame
  *   { type: 'video',   src }           -> native <video> (e.g. an .mp4 URL)
  *   { type: 'youtube', id }            -> YouTube iframe
  *   { type: 'ganjing', id, href }      -> GanJing World iframe
@@ -76,7 +78,11 @@ export default function Media({ media = {}, label = 'Preview', to, href }) {
   )
 
   const inner = (
-    <div className={`media-frame media-photo ${media.aspect === 'wide' ? 'media-wide' : ''}`}>
+    <div
+      className={`media-frame media-photo ${media.aspect === 'wide' ? 'media-wide' : ''} ${
+        media.fit === 'contain' ? 'media-contain' : ''
+      }`}
+    >
       {visual}
     </div>
   )

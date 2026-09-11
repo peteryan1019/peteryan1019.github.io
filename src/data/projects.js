@@ -106,7 +106,12 @@ const projects = [
       'Added reviews and feedback so students can share their experience after an event.',
     ],
     links: [],
-    media: { type: 'image' },
+    media: {
+      type: 'image',
+      src: '/images/android-robot.png',
+      alt: 'Android robot logo',
+      fit: 'contain',
+    },
   },
 ]
 

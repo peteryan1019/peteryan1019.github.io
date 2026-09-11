@@ -35,6 +35,15 @@
   object-fit: cover;
 }
 
+/* Logo-style artwork: show the whole image instead of cropping it to the frame */
+.media-photo.media-contain {
+  background: var(--white);
+}
+.media-photo.media-contain img {
+  object-fit: contain;
+  padding: 1.5rem;
+}
+
 /* Placeholder */
 .media-placeholder {
   position: absolute;
