@@ -18,7 +18,7 @@ export const navItems = [
     label: 'Software Projects',
     short: 'Software Projects',
     blurb:
-      'Hardware-meets-software builds — a Bluetooth 3D mouse on bare-metal STM32, an autonomous soccer-playing robot, and a full-stack AI web app.',
+      'Embedded systems, secure networking, mobile apps, and full-stack AI products — a collection of the software I have designed and built.',
     icon: 'code',
   },
   {

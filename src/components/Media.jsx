@@ -18,7 +18,7 @@ function Placeholder({ label }) {
       <div className="media-placeholder-inner">
         <Icon name="code" size={26} />
         <span>{label}</span>
-        <small>Add an image at public/images/</small>
+        <small>Project overview</small>
       </div>
     </div>
   )

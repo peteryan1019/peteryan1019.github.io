@@ -9,8 +9,8 @@ export default function Projects() {
           <span className="eyebrow">Software Projects</span>
           <h1>Things I've built</h1>
           <p>
-            From bare-metal firmware to full-stack web apps — a few projects that show how I like
-            to work across the stack.
+            From embedded firmware and secure networking to AI-assisted full-stack products —
+            projects that show how I like to work across the stack.
           </p>
         </div>
       </header>
