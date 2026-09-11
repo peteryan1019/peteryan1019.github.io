@@ -14,20 +14,12 @@ const projects = [
       'Containerized the application with Docker and deployed it to DigitalOcean behind an nginx reverse proxy.',
     ],
     links: [{ label: 'Visit ResumeBuilder', href: 'https://resumebuilder.works/' }],
-    media: { type: 'image' },
-  },
-  {
-    title: 'Personal Website',
-    meta: 'July 2026',
-    tags: ['React', 'React Router', 'Vite', 'GitHub Pages'],
-    description:
-      'A responsive single-page application built with React and deployed on GitHub Pages. It brings my projects, work experience, writing, club activities, and music into one place.',
-    bullets: [
-      'Organized the site around reusable, data-driven components so portfolio content can be updated independently from page layouts.',
-      'Created dedicated routes for projects, experience, blogs, clubs, hobbies, and contact information.',
-    ],
-    links: [{ label: 'Explore this site', href: 'https://peteryan1019.github.io/' }],
-    media: { type: 'image' },
+    media: {
+      type: 'image',
+      src: '/images/tailr-home.png',
+      alt: 'Tailr resume tailoring application home page',
+      aspect: 'wide',
+    },
   },
   {
     title: 'AI-Powered Banner Design Web App',
@@ -97,7 +89,11 @@ const projects = [
       'Worked with Python cryptography modules for secure randomness, ciphers, key derivation, hashing, public keys, and signatures; earned an A in the course.',
     ],
     links: [],
-    media: { type: 'image' },
+    media: {
+      type: 'image',
+      src: '/images/tls13-handshake.png',
+      alt: 'Diagram comparing TLS 1.2 and TLS 1.3 handshakes',
+    },
   },
   {
     title: 'University Event App',

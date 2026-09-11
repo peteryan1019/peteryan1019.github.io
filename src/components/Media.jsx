@@ -75,7 +75,11 @@ export default function Media({ media = {}, label = 'Preview', to, href }) {
     <Placeholder label={label} />
   )
 
-  const inner = <div className="media-frame media-photo">{visual}</div>
+  const inner = (
+    <div className={`media-frame media-photo ${media.aspect === 'wide' ? 'media-wide' : ''}`}>
+      {visual}
+    </div>
+  )
 
   if (to) {
     return (
