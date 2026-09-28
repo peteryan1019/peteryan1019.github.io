@@ -13,7 +13,7 @@ const projects = [
       'Built an Angular frontend and Express.js backend in TypeScript, including an editor for refining generated resumes.',
       'Containerized the application with Docker and deployed it to DigitalOcean behind an nginx reverse proxy.',
     ],
-    links: [{ label: 'Visit ResumeBuilder', href: 'https://resumebuilder.works/' }],
+    links: [{ label: 'Visit ResumeBuilder', href: 'https://resume-builder.dev/' }],
     media: {
       type: 'image',
       src: '/images/tailr-home.png',
